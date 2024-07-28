@@ -41,9 +41,9 @@
     display: none;
   }
   
-  @media (max-width: 50px) {
+  @media (max-width: 550px) {
     .shop-x-logo {
-      display: none;
+      display: block;
     }
   
     .shop-x-mobile-logo {
