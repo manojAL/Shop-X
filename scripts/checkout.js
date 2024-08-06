@@ -6,6 +6,7 @@ import {deliveryOptions} from "../data/deliveryOptions.js"
 
 const today=dayjs();
 const deliveryDate=today.add(7,'days');
+function renderOrderSummary(){
 let cartContainer=``;
 cart.forEach((cartItem)=>{
     let matchingProduct;
@@ -108,6 +109,11 @@ document.querySelectorAll(".js-delete-link").forEach((link)=>{
     element.addEventListener("click",()=>{
       const {productId,deliveryOptionId}=element.dataset;
       
-updateDeliveryOption(productId,deliveryOptionId)
+updateDeliveryOption(productId,deliveryOptionId);
+renderOrderSummary();
     });
+    
   })
+
+}
+renderOrderSummary();
