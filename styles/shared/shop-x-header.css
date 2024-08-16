@@ -3,7 +3,7 @@
     background-color:rgb(48, 93, 144);
     padding-left: 15px;
     padding-right: 15px;
-    color: white;
+    color: hwb(0 87% 9% / 0.679);
     align-items: center;
     justify-content: space-between;
     position: fixed;
